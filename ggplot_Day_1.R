@@ -39,3 +39,22 @@ ggplot(data = ChickWeight, aes(x = Time, y = weight, colour = Diet)) +
   geom_point() +              # Plotting points
   geom_smooth(method = "lm")  # lm : Linear model : 1 line fo best fit 
 
+# Exploring the colour and size variation 
+
+ggplot(data = ChickWeight, aes(x = Time, y = weight, colour = Diet)) +
+  geom_point(aes(size = weight)) +                    # Change aes. Each point represents the weight, 
+  geom_smooth(method = "lm", size = 1.2)              # size changes the thickness of the line
+  labs (x = "Time(days)", y = "Weight (kg)") +
+  # theme(legend.position = "bottom")
+  theme_bw()
+
+
+
+
+
+
+
+
+
+
+
