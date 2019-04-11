@@ -69,3 +69,4 @@ SACTN_sum <- SACTN %>%
             min_temp = min(temp, na.rm = TRUE),
             max_temp = max(temp, na.rm = TRUE)
   )
+
